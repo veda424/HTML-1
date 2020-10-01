@@ -6,6 +6,49 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		}
+		#navbar{
+    
+    display: flex;
+    flex-direction: unset;
+    border: 2px solid red;
+}
+#navbar ul{
+    display: flex;
+    background-color: #bed622;
+    border: 1px solid red;
+    
+
+}
+#navbar li {
+    list-style-type: none;
+    padding: 12px 20px;
+    font-size: 25px;
+}
+#navbar li a {
+    text-decoration: none;
+    color: #b33c3c;
+}
+#navbar li a:hover{
+        background-color: #b9172ead;
+        color: #e2e21c;
+        border-radius: 7px;
+
+    
+
+}
+#navbar::before{
+    content: "";
+    background-size: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+     z-index: -1;
+
+}
 
 		h1{
 			color: white;
@@ -106,12 +149,15 @@
 	</style>
 </head>
 <body>
-	<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="http://gmail.com/">contact</a></li>
-  <li><a href="#about">About</a></li>
-  </ul>
+   <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="http://gmail.com/">Contact us</a></li>
+        </ul>
+        
+    </nav>
 </body>
 
 
